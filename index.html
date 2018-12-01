@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> SOUL ENGLISH | Test Page </title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <section class="hero is-info is-medium has-wallpaper has-text-white" id="header">
+
+    <!-- Hero Head: Navbar and et cetra-->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand is-light">
+            <a class="navbar-item" id="logo-SE" href="index.html">
+              SOUL ENGLISH
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu" aria-label="menu" aria-expanded="flase" style="color:white;">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+          <div id="navbarMenu" class="navbar-menu" style="background-color:#0A2140;">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-white is-active" href="#">
+                  <span class="icon">
+                    <i class="fas fa-home"></i>
+                  </span>
+                  <span>หน้าแรก</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#">
+                  <span class="icon">
+                    <i class="fas fa-users"></i>
+                  </span>
+                  <span>ผู้สอน</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#">
+                  <span class="icon">
+                    <i class="fas fa-book-open"></i>
+                  </span>
+                  <span>บทเรียน</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#">
+                  <span class="icon">
+                    <i class="fas fa-phone-square"></i>
+                  </span>
+                  <span>ติดต่อเรา</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Body: aka. Header! -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="subtitle"> Welcome to </h1>
+        <h1 class="title"> SOUL ENGLISH </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Notch -->
+  <section class="section" id="content">
+    <div class="content has-text-centered">
+        <p class="title"> Meet your teachers. </p>
+        <p class="subtitle"> พาสเจอร์ไรส์ ชีส อีสต์ ก๋ากั่นหลวงปู่ พลานุภาพศิลปากรฟลุก เอ็นเตอร์เทนม็อบลิมูซีนร็อค อุปสงค์ เบอร์รีเซ็นทรัลออยล์ฮวงจุ้ย แช่แข็งไชน่ารามเทพสวีทซ้อ </p>
+
+        <img src="https://via.placeholder.com/200?text=Profile+Picture" alt="">
+
+    </div>
+  </section>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+</body>
+
+</html>
