@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree|Athiti:700');
+@import url('data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdBdGhpdGknOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNzAwOwogIHNyYzogbG9jYWwoJ0F0aGl0aSBCb2xkJyksIGxvY2FsKCdBdGhpdGktQm9sZCcpLCB1cmwoaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL2F0aGl0aS92Mi9wZTBzTUlTZExJWkl2MXdBc0RkQ0JmZTYudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0KQGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdCYWkgSmFtanVyZWUnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNDAwOwogIHNyYzogbG9jYWwoJ0JhaSBKYW1qdXJlZSBSZWd1bGFyJyksIGxvY2FsKCdCYWlKYW1qdXJlZS1SZWd1bGFyJyksIHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3MvYmFpamFtanVyZWUvdjEvTERJMWFwU0NPQnRfYWVRUTdmdHlkb2E4WHNMTy50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQo=');
 
 /* Font Provided by Google
 font-family: 'Athiti', sans-serif;
 font-family: 'Bai Jamjuree', sans-serif;
 */
+
 /* Color Pallete */
 :root {
   --DCBlue: #0A2140;
@@ -17,6 +18,9 @@ font-family: 'Bai Jamjuree', sans-serif;
 .hero {
   font-family: 'Athiti', sans-serif;
 }
+nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 /* Header */
 #logo-SE {
@@ -24,11 +28,29 @@ font-family: 'Bai Jamjuree', sans-serif;
 }
 
 #header {
-  background-color: #0A2140;
-  background-image: linear-gradient(to bottom right, #0A2140, #2A558C);
+  background-color: #2A558C;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.has-background {
+  background:
+      /* top, transparent red */
+      linear-gradient(
+        to bottom right,
+        rgba(10, 33, 64, 0.9),
+        rgba(42, 85,140, 0.9)
+      ),
+      /* bottom, image */
+      url("https://ae01.alicdn.com/kf/HTB1rAteOXXXXXb7XVXXq6xXFXXXm/Newspaper-Wallpaper-In-English-Alphabet-Retro-Nostalgic-Fashion-Shop-Decoration-Personalized-Clothing-Store-Old-Wall-Paper.jpg_640x640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.is-info {
+  button-background-color: black;
 }
 
 .content {
