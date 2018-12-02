@@ -9,6 +9,7 @@
   <title> SOUL ENGLISH | Test Page </title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+  <script async type="text/javascript" src="../js/bulma.js"></script>
   <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="script/main.js"></script>
@@ -16,7 +17,7 @@
 
 <body>
   <!-- Header -->
-  <section class="hero is-dark is-medium has-text-white" id="header">
+  <section class="hero is-dark is-medium has-text-white has-def-background" id="header">
 
     <!-- Hero Head: Navbar and et cetra-->
     <div class="hero-head">
@@ -28,8 +29,8 @@
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu" aria-label="menu" aria-expanded="flase" style="color:white;">
               <span></span>
-            <span></span>
-            <span></span>
+              <span></span>
+              <span></span>
             </span>
           </div>
 
@@ -80,6 +81,48 @@
         </div>
       </nav>
     </div>
+  </section>
+
+  <section class="hero is-light is-fullheight has-def-text">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-4 is-offset-4">
+          <h3 class="title has-test-grey"> เข้าสู่ระบบ </h3>
+          <p class="subtitle has-text-grey"> สมาชิกเข้าสู่ระบบ </p>
+          <div class="box">
+            <form>
+              <div class="field">
+                <div class="control">
+                  <p class="is-2"> อีเมล์ </p>
+                  <input type="email" class="input is-large" placeholder="Your Email" autofocus="">
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <p class="is-2"> รหัสผ่าน </p>
+                  <input type="password" class="input is-large" placeholder="Your Password">
+                </div>
+              </div>
+
+              <div class="field has-text-right">
+                <label class="checkbox">
+                  <input type="checkbox"> จดจำรหัสผ่าน
+                </label>
+              </div>
+              <button class="button is-block is-info is-large is-fullwidth"> เข้าสู่ระบบ </button>
+            </form>
+          </div>
+          <div class="lines" data-text="Some Text Goes Here"></div>
+          <p class="has-text-grey">
+            <a href="#"> สมัครสมาชิก </a> &nbsp;·&nbsp;
+            <a href="#"> ลืมรหัสผ่าน </a> &nbsp;·&nbsp;
+            <a href="#"> ต้องการความช่วยเหลือ ? </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 </body>
