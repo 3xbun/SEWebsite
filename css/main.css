@@ -1,16 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Athiti:700|Bai+Jamjuree');
 /* Font Provided by Google
 font-family: 'Athiti', sans-serif;
 font-family: 'Bai Jamjuree', sans-serif;
 */
-/* Color Pallete */
-:root {
-  --DCBlue: #0A2140;
-  --SoBlue: #2A558C;
-  --Egg: #F2DCC2;
-  --SoBrown: #A66832;
-  --DCBrown: #592E08;
-}
 
 /* Base */
 .hero {

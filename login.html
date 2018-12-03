@@ -9,9 +9,12 @@
   <title> SOUL ENGLISH | Test Page </title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-  <script async type="text/javascript" src="../js/bulma.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="node_modules/bulma-extensions/dist/css/bulma-extensions.min.css">
   <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mystyles.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="node_modules/bulma-extensions/dist/bulma-extensions.js"></script>
   <script src="script/main.js"></script>
 </head>
 
@@ -83,7 +86,7 @@
     </div>
   </section>
 
-  <section class="hero is-light is-fullheight has-def-text">
+  <section class="hero is-light is-fullheight has-def-text" id="logo-SE">
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-4 is-offset-4">
@@ -94,25 +97,25 @@
               <div class="field">
                 <div class="control">
                   <p class="is-2"> อีเมล์ </p>
-                  <input type="email" class="input is-large" placeholder="Your Email" autofocus="">
+                  <input type="email" class="input is-large" placeholder="อีเมล์" autofocus="">
                 </div>
               </div>
 
               <div class="field">
                 <div class="control">
                   <p class="is-2"> รหัสผ่าน </p>
-                  <input type="password" class="input is-large" placeholder="Your Password">
+                  <input type="password" class="input is-large" placeholder="รหัสผ่าน">
                 </div>
               </div>
 
               <div class="field has-text-right">
-                <label class="checkbox">
-                  <input type="checkbox"> จดจำรหัสผ่าน
-                </label>
+                <input class="is-checkradio is-circle is-info" id="exampleCheckboxDefaultCircle" type="checkbox" name="exampleCheckboxDefaultCircle" checked="checked">
+                <label for="exampleCheckboxDefaultCircle"> จดจำรหัสผ่าน </label>
               </div>
-              <button class="button is-block is-info is-large is-fullwidth"> เข้าสู่ระบบ </button>
+              <button class="button is-block is-info is-large is-fullwidth" id="logo-SE"> เข้าสู่ระบบ </button>
             </form>
           </div>
+          <div class="is-divider" data-content=" หรือ "></div>
           <div class="lines" data-text="Some Text Goes Here"></div>
           <p class="has-text-grey">
             <a href="#"> สมัครสมาชิก </a> &nbsp;·&nbsp;

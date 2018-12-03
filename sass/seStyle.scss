@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Athiti:700|Bai+Jamjuree');
+
+// Set your brand colors
+$dark-blue: #0A2140;
+$light-blue: #2A558C;
+$egg: #F2DCC2;
+$light-brown: #A66832;
+$dark-brown: #592E08;
+
+// Update Bulma's global variables
+$family-sans-serif: "Bai-Jamjuree", sans-serif;
+$info: $light-blue;
+$primary: $dark-blue;
+$link: $egg;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-shadow: none;
+
+// Update some of  Bulma Extensions variables
+$divider-color: inherit;
+$divider-font-size: 1em;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/form.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+@import "../node_modules/bulma-extensions/bulma-divider/src/sass/index.sass"
