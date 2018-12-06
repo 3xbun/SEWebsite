@@ -3,26 +3,60 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Athiti:700|Bai+Jamjuree');
 
-// Set your brand colors
-$dark-blue: #0A2140;
-$light-blue: #2A558C;
-$egg: #F2DCC2;
-$light-brown: #A66832;
-$dark-brown: #592E08;
+// Set brand font
+$fancy-font: 'Athiti', sans-serif;
+
+// Set brand colors
+$light: rgba(237, 237, 244, 1);
+$light-blue: rgba(205, 239, 255, 1);
+$grey-blue: rgba(160, 194, 222, 1);
+$blue: rgba(8, 84, 199, 1);
+$dark-blue: rgba(6, 71, 128, 1);
 
 // Update Bulma's global variables
 $family-sans-serif: "Bai-Jamjuree", sans-serif;
 $info: $light-blue;
 $primary: $dark-blue;
-$link: $egg;
+$link: $blue;
 
 // Update some of Bulma's component variables
 $control-border-width: 2px;
 $input-shadow: none;
 
-// Update some of  Bulma Extensions variables
-$divider-color: inherit;
+// Update some of Bulma's Extensions variables
 $divider-font-size: 1em;
+$divider-text-background: $light;
+
+/* Base */
+
+nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+#logo-SE {
+  font-family: 'Athiti', sans-serif;
+}
+
+#header {
+  font-family: 'Athiti', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.has-background {
+  background:
+    /* top, transparent red */
+    linear-gradient(to bottom right,
+    rgba(10, 33, 64, 0.9),
+    rgba(42, 85, 140, 0.9)),
+    /* bottom, image */
+    url("https://ae01.alicdn.com/kf/HTB1rAteOXXXXXb7XVXXq6xXFXXXm/Newspaper-Wallpaper-In-English-Alphabet-Retro-Nostalgic-Fashion-Shop-Decoration-Personalized-Clothing-Store-Old-Wall-Paper.jpg_640x640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -35,4 +69,4 @@ $divider-font-size: 1em;
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 
-@import "../node_modules/bulma-extensions/bulma-divider/src/sass/index.sass"
+@import "../node_modules/bulma-extensions/bulma-divider/src/sass/index.sass";
