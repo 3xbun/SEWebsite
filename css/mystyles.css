@@ -4019,7 +4019,7 @@ a.navbar-item,
   text-align: center; }
 
 .is-divider[data-content]::after, .is-divider-vertical[data-content]::after {
-  background: #ededf4;
+  background: white;
   color: #b5b5b5;
   content: attr(data-content);
   display: inline-block;
